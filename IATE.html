@@ -1,0 +1,275 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxo | Alugue seu Iate</title>
+
+<style>
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* HEADER */
+
+header{
+    background-color: #1d252c;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img{
+    width: 45px;
+}
+
+.logo h1{
+    color: #22b8e8;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.logo p{
+    color: white;
+    font-size: 15px;
+}
+
+/* MENU */
+
+nav{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #22b8e8;
+}
+
+/* BANNER */
+
+.banner{
+    height: 85vh;
+    background-image: url("imagens/barcoprincipal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* CONTEÚDO */
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* CARDS */
+
+.cards{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TÍTULOS DOS CARDS */
+
+.topo-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.azul{
+    background-color: #22b8e8;
+}
+
+.dourado{
+    background-color: #c7ae72;
+}
+
+.topo-card img{
+    width: 20px;
+}
+
+/* TEXTOS */
+
+.card h2{
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #222;
+}
+
+.card p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* IMAGENS */
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* GALERIA */
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+
+        <img src="imagens/barco1.png" alt="Logo">
+
+        <div>
+            <h1>Luxo</h1>
+            <p>Alugue seu Iate</p>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="">INÍCIO</a>
+        <a href="">IATES</a>
+        <a href="">DESTINOS</a>
+        <a href="">TRIPULAÇÃO</a>
+        <a href="">CONTATO</a>
+    </nav>
+
+</header>
+
+<!-- BANNER -->
+
+<section class="banner"></section>
+
+<!-- CONTEÚDO -->
+
+<section class="container">
+
+    <div class="cards">
+
+        <!-- CARD 1 -->
+
+        <div class="card">
+
+            <div class="topo-card azul">
+                <img src="imagens/destino.png" alt="">
+                <h3>Destinos</h3>
+            </div>
+
+            <h2>Conheça lugares incríveis</h2>
+
+            <p>
+                Explore praias paradisíacas e viva experiências únicas em alto-mar.
+                Navegue com conforto, luxo e segurança pelos melhores destinos
+                turísticos do mundo.
+            </p>
+
+            <img src="imagens/barcodestino.jpg" alt="Destino">
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+
+            <div class="topo-card dourado">
+                <img src="imagens/nossafrota.png" alt="">
+                <h3>Nossa Frota</h3>
+            </div>
+
+            <h2>Os melhores iates para você</h2>
+
+            <p>
+                Temos uma frota moderna e sofisticada, preparada para oferecer
+                momentos inesquecíveis com total conforto e elegância.
+            </p>
+
+            <div class="galeria">
+
+                <img src="imagens/barconossafrota1.jpg" alt="">
+                <img src="imagens/barconossafrota2.jpg" alt="">
+                <img src="imagens/barconossafrota2.jpg" alt="">
+                <img src="imagens/barconossafrota1.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 Luxo - Aluguel de Iates. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
